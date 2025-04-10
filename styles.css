@@ -1,0 +1,295 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text color for contrast */
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0d1b2a; /* Deep blue-black color for header */
+  padding: 20px 0;
+  z-index: 100;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+header .logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00bcd4; /* Aqua blue for logo */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .nav-links {
+  list-style: none;
+  margin-top: 10px;
+}
+
+header .nav-links li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+  color: #ff5722; /* Bright orange accent on hover */
+  font-weight: 700;
+}
+
+/* Hero Section */
+#home {
+  background: #121212; /* Deep black background for hero section */
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#home .hero-content h1 {
+  font-size: 36px;
+  color: #00bcd4; /* Aqua blue text */
+}
+
+#home .hero-content p {
+  color: #ddd; /* Light gray text */
+}
+
+.cta-button {
+  background-color: #00bcd4; /* Aqua blue for CTA button */
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff5722; /* Orange accent on hover */
+}
+
+/* About Section */
+#about {
+  background: #0d1b2a; /* Dark blue-black background for about section */
+  padding: 60px 20px;
+}
+
+.about-text p {
+  color: #ddd; /* Light gray text */
+}
+
+/* Skills Section */
+#skills {
+  background: #121212; /* Dark background for skills section */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skill-card {
+  background-color: #1a2631; /* Darker background for skill cards */
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.1); /* Grow on hover for effect */
+}
+
+.skill-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #00bcd4; /* Aqua blue icons */
+}
+
+.skill-card h3 {
+  font-size: 20px;
+}
+
+/* Projects Section */
+#projects {
+  background: #0d1b2a; /* Dark blue-black background for projects section */
+  padding: 60px 20px;
+}
+
+.project-card {
+  background-color: #1a2631;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  color: #00bcd4;
+  margin-top: 10px;
+}
+
+.project-link {
+  color: #ff5722; /* Orange for project links */
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Contact Section */
+#contact {
+  background: #121212; /* Dark background for contact section */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background-color: #1a2631;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-container .submit-btn {
+  background-color: #00bcd4; /* Aqua blue for submit button */
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-container .submit-btn:hover {
+  background-color: #ff5722; /* Orange accent on hover */
+}
+
+.social-links a {
+  color: #00bcd4; /* Aqua blue icons for social links */
+  font-size: 30px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff5722; /* Orange accent on hover */
+}
+
+/* Footer */
+footer {
+  background: #0d1b2a; /* Deep blue-black footer */
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #ddd; /* Light gray text */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: #fff;
+}
+
+body.dark-mode header {
+  background: #0d1b2a;
+}
+
+body.dark-mode .cta-button {
+  background-color: #ff5722; /* Orange in dark mode */
+}
+
+body.dark-mode .skill-card {
+  background-color: #1a2631;
+}
+
+body.dark-mode .project-card {
+  background-color: #1a2631;
+}
+
+body.dark-mode .contact-container input,
+body.dark-mode .contact-container textarea {
+  background-color: #1a2631;
+  border: 1px solid #444;
+}
+
+body.dark-mode .submit-btn {
+  background-color: #ff5722; /* Orange in dark mode */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #f4f4f4; /* Light background for light mode */
+  color: #333; /* Dark text for better readability */
+}
+
+body.light-mode header {
+  background: #00bcd4; /* Bright blue header */
+}
+
+body.light-mode .cta-button {
+  background-color: #ff5722; /* Orange for light mode */
+}
+
+body.light-mode .skill-card {
+  background-color: #fff;
+  color: #333;
+}
+
+body.light-mode .project-card {
+  background-color: #fff;
+  color: #333;
+}
+
+body.light-mode .contact-container input,
+body.light-mode .contact-container textarea {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+body.light-mode .submit-btn {
+  background-color: #00bcd4; /* Blue in light mode */
+}
